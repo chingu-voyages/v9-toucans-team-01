@@ -1,0 +1,27 @@
+{
+  "name": "sportify-landing-page-copy",
+  "version": "1.0.0",
+  "description": "\"It's our toucans-01 team project for Chingu Voyage 9\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chingu-voyages/v9-toucans-team-01.git"
+  },
+  "author": "toucans-01",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chingu-voyages/v9-toucans-team-01/issues"
+  },
+  "homepage": "https://github.com/chingu-voyages/v9-toucans-team-01#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0"
+  }
+}

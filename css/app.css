@@ -1,0 +1,18 @@
+#banner-carousel {
+  height: 100vh;
+}
+#banner-carousel img {
+  max-width: 100%;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 50px;
+  width: 100px;
+  height: 100px;
+}
+.carousel-indicators li {
+  background-color: red;
+}
+
+/*# sourceMappingURL=app.css.map */
