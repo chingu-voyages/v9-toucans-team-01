@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sportify</title>
-    <!-- Importing the css file of bootstrap -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- Importing the css file of bootstrap... Actually it wasn't really needed -->
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> -->
     <!-- Importing font-awesome -->
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <!-- Importing our own css style file (that is a sass compiled css file) -->
@@ -16,33 +16,41 @@
 
 <body>
     <div id="banner-carousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#banner-carousel" data-slide-to="0" class="active">asasa</li>
-            <li data-target="#banner-carousel" data-slide-to="1"></li>
-            <li data-target="#banner-carousel" data-slide-to="2"></li>
+        <ol class="carousel-indicators d-none d-md-flex">
+            <li data-target="#banner-carousel" data-slide-to="0" class="active">.01</li>
+            <li data-target="#banner-carousel" data-slide-to="1">.02</li>
+            <li data-target="#banner-carousel" data-slide-to="2">.03</li>
         </ol>
         <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active" data-interval="5000">
-                
-                <img src="assets/img/banner1.png" data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide">
+            <div class="carousel-item active" data-interval="1000">
+                <div class="motivacional">
+                    <span class="subtext">go to the gym now!</span>
+                    <span class="headline"><b>never</b> limit yourself</span>
+                    <button type="button" class="btn btn-outline-danger btn-lg">read more</button>
+                </div>
+                <!-- <img src="https://colorlib.com/preview/theme/sportify/images/index.jpg" data-src="holder.js/900x500/auto/#777:#555/text:First slide" -->
+                    <!-- alt="First slide"> -->
             </div>
-            <div class="carousel-item" data-interval="5000">
-                <img src="assets/img/banner1.png" data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide">
+            <div class="carousel-item" data-interval="1000">
+                <div class="motivacional">
+                    <span class="subtext">go to the gym now!</span>
+                    <span class="headline"><b>never</b> limit yourself</span>
+                    <button type="button" class="btn btn-outline-danger btn-lg">read more</button>
+                </div>
+                <!-- <img src="https://colorlib.com/preview/theme/sportify/images/index.jpg" data-src="holder.js/900x500/auto/#666:#444/text:Second slide" -->
+                    <!-- alt="Second slide"> -->
             </div>
-            <div class="carousel-item" data-interval="5000">
-                <img src="assets/img/banner1.png" data-src="holder.js/900x500/auto/#666:#444/text:Third slide" alt="Third slide">
+            <div class="carousel-item" data-interval="1000">
+                <div class="motivacional">
+                    <span class="subtext">go to the gym now!</span>
+                    <span class="headline"><b>never</b> limit yourself</span>
+                    <button type="button" class="btn btn-outline-danger btn-lg">read more</button>
+                </div>
+                <!-- <img src="https://colorlib.com/preview/theme/sportify/images/index.jpg" data-src="holder.js/900x500/auto/#666:#444/text:Third slide" -->
+                    <!-- alt="Third slide"> -->
             </div>
         </div>
-        <a class="carousel-control-prev" href="#banner-carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#banner-carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
-
     <!-- Importing Jquery -->
     <script src="node_modules/jquery/dist/jquery.slim.js"></script>
     <!-- Importing popper.js file -->

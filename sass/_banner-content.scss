@@ -1,0 +1,59 @@
+@mixin flex-column-centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-column-right-aligned{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+$font-family: 'Open Sans', sans-serif;
+$banner-content-color: white;
+$banner-content-weight: 100;
+$banner-headline-size: 4.5em;
+$banner-subtext-size: 1em;
+$theme-colors: (
+  "primary": #0074d9,
+  "danger": yellow
+);
+
+
+.motivacional{
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+    color: $banner-content-color;
+    @include flex-column-right-aligned();
+        span{
+            text-transform: uppercase;
+            width: 85%;
+            font-family: $font-family;
+            margin-bottom: 10px;
+            letter-spacing: 0.25em;
+        }
+        .headline{
+            font-size: $banner-headline-size;
+            font-weight: $banner-content-weight;
+            line-height: 1.1em;
+            b{
+                font-weight: 900;
+            }
+        }
+        .subtext{
+            font-weight: bold;
+            font-size: $banner-subtext-size;
+        }
+        button{
+            margin-top: 25px;
+            font-size: .8em;
+            color: $banner-content-color;
+            text-transform: uppercase;
+            padding: 20px 30px !important;
+            width: 15% !important;
+            border-radius: none !important;
+        }
+}
