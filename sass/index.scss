@@ -1,18 +1,14 @@
 
 // Option A: Include all of Bootstrap
 // @import "compass";
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
 @import "variables";
 @import "mixins";
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "general";
 @import "banner";
 @import "about-programs";
+@import "about-sportify";
 
-
-*{
-    font-family: $font-family
-}
-body{
-    background-color: white;
-}
 // 

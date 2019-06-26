@@ -24,15 +24,7 @@
             font-weight: bold;
             font-size: $banner-subtext-size;
         }
-        button{
-            margin-top: 25px;
-            font-size: .8em;
-            color: $banner-content-color;
-            text-transform: uppercase;
-            padding: 20px 30px !important;
-            width: 200px !important;
-            border-radius: 0px;
-        }
+        @import "read-more-button";
 }
 
 @include media-breakpoint-down(sm) {

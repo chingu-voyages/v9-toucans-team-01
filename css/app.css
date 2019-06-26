@@ -9924,6 +9924,14 @@ h3 {
     border-color: #dee2e6;
   }
 }
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
 .carousel {
   padding: 0;
 }
@@ -9992,7 +10000,7 @@ h3 {
   font-weight: bold;
   font-size: 1em;
 }
-.motivacional button {
+.motivacional .read-more-button {
   margin-top: 25px;
   font-size: 0.8em;
   color: white;
@@ -10067,12 +10075,101 @@ h3 {
   background-color: #190A49;
 }
 
-* {
-  font-family: "Open Sans", sans-serif;
+#about-sportify .about-content .read-more-button {
+  margin-top: 25px;
+  font-size: 0.8em;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px 30px !important;
+  width: 200px !important;
+  border-radius: 0px;
 }
-
-body {
-  background-color: white;
+#about-sportify .about-content .right-side-content img {
+  max-width: 100%;
+  max-height: 100%;
+}
+#about-sportify .about-content .headline .title {
+  font-weight: bold;
+  font-size: 3em;
+  letter-spacing: 0.25em;
+}
+#about-sportify .about-content .headline .subtitle {
+  font-weight: bold;
+  font-size: 0.9em;
+  letter-spacing: 0.35em;
+}
+#about-sportify .about-content .headline .subtitle, #about-sportify .about-content .content-text {
+  color: #9F9F9F;
+}
+#about-sportify .about-content .content-text {
+  margin-top: 25px;
+  font-size: 0.9em;
+  line-height: 2em;
+}
+#about-sportify .about-content .read-more-button {
+  color: black;
+}
+#about-sportify .about-content .read-more-button:hover {
+  color: white;
+}
+#about-sportify hr {
+  background-color: #DFDFDF;
+  height: 0.5px;
+  width: 80vw;
+}
+#about-sportify .quote {
+  margin: 75px auto;
+  width: 75vw;
+  text-align: center;
+}
+#about-sportify .quote blockquote {
+  font-weight: 600;
+  font-style: oblique;
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+#about-sportify .quote .blockquote-author {
+  font-weight: bold;
+}
+@media (min-width: 992px) {
+  #about-sportify .left-side-content, #about-sportify .right-side-content {
+    margin: none;
+  }
+  #about-sportify .left-side-content {
+    width: 50vw;
+    height: 90vh;
+    margin-right: 25px;
+  }
+  #about-sportify .right-side-content {
+    margin: auto;
+    width: 400px;
+    height: 450px;
+  }
+}
+@media (max-width: 991.98px) {
+  #about-sportify .left-side-content {
+    margin: 100px auto;
+  }
+  #about-sportify .left-side-content .content-text {
+    font-size: 0.9em;
+  }
+  #about-sportify .left-side-content .headline .title {
+    font-size: 2em;
+    margin-top: 10px;
+  }
+  #about-sportify .left-side-content .headline .subtitle {
+    font-size: 0.9em;
+  }
+  #about-sportify .right-side-content {
+    margin-bottom: 50px;
+  }
+  #about-sportify .quote blockquote {
+    font-size: 0.95em;
+  }
+  #about-sportify .quote .blockquote-author {
+    font-size: 0.75em;
+    font-weight: normal;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
