@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sportify</title>
-    <!-- Importing the css file of bootstrap... Actually it wasn't really needed -->
-    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> -->
     <!-- Importing font-awesome -->
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <!-- Importing our own css style file (that is a sass compiled css file) -->
@@ -15,42 +13,81 @@
 </head>
 
 <body>
-    <div id="banner-carousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators d-none d-md-flex">
-            <li data-target="#banner-carousel" data-slide-to="0" class="active">.01</li>
-            <li data-target="#banner-carousel" data-slide-to="1">.02</li>
-            <li data-target="#banner-carousel" data-slide-to="2">.03</li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active" data-interval="1000">
-                <div class="motivacional">
-                    <span class="subtext">go to the gym now!</span>
-                    <span class="headline"><b>never</b> limit yourself</span>
-                    <button type="button" class="btn btn-outline-danger btn-lg">read more</button>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- banner section -->
+    <div class="">
+        <div id="banner-carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators d-none d-md-flex">
+                <li data-target="#banner-carousel" data-slide-to="0" class="active">.01</li>
+                <li data-target="#banner-carousel" data-slide-to="1">.02</li>
+                <li data-target="#banner-carousel" data-slide-to="2">.03</li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active" data-interval="5000">
+                    <div class="motivacional">
+                        <span class="subtext">go to the gym now!</span>
+                        <span class="headline"><b>never</b> limit yourself</span>
+                        <button type="button" class="btn btn-outline-danger btn-lg">read more</button>
+                    </div>
                 </div>
-                <!-- <img src="https://colorlib.com/preview/theme/sportify/images/index.jpg" data-src="holder.js/900x500/auto/#777:#555/text:First slide" -->
-                    <!-- alt="First slide"> -->
-            </div>
-            <div class="carousel-item" data-interval="1000">
-                <div class="motivacional">
-                    <span class="subtext">go to the gym now!</span>
-                    <span class="headline"><b>never</b> limit yourself</span>
-                    <button type="button" class="btn btn-outline-danger btn-lg">read more</button>
+                <div class="carousel-item" data-interval="5000">
+                    <div class="motivacional">
+                        <span class="subtext">go to the gym now!</span>
+                        <span class="headline"><b>never</b> limit yourself</span>
+                        <button type="button" class="btn btn-outline-danger btn-lg">read more</button>
+                    </div>
                 </div>
-                <!-- <img src="https://colorlib.com/preview/theme/sportify/images/index.jpg" data-src="holder.js/900x500/auto/#666:#444/text:Second slide" -->
-                    <!-- alt="Second slide"> -->
-            </div>
-            <div class="carousel-item" data-interval="1000">
-                <div class="motivacional">
-                    <span class="subtext">go to the gym now!</span>
-                    <span class="headline"><b>never</b> limit yourself</span>
-                    <button type="button" class="btn btn-outline-danger btn-lg">read more</button>
+                <div class="carousel-item" data-interval="5000">
+                    <div class="motivacional">
+                        <span class="subtext">go to the gym now!</span>
+                        <span class="headline"><b>never</b> limit yourself</span>
+                        <button type="button" class="btn btn-outline-danger btn-lg">read more</button>
+                    </div>
                 </div>
-                <!-- <img src="https://colorlib.com/preview/theme/sportify/images/index.jpg" data-src="holder.js/900x500/auto/#666:#444/text:Third slide" -->
-                    <!-- alt="Third slide"> -->
             </div>
         </div>
+
     </div>
+    <!-- end of banner section -->
+
     <!-- Importing Jquery -->
     <script src="node_modules/jquery/dist/jquery.slim.js"></script>
     <!-- Importing popper.js file -->

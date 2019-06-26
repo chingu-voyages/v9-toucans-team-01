@@ -1,6 +1,8 @@
 
 // Option A: Include all of Bootstrap
-
+@import "variables";
+@import "mixins";
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "banner";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
 // 

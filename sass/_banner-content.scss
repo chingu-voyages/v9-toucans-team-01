@@ -1,36 +1,13 @@
-@mixin flex-column-centered{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-@mixin flex-column-right-aligned{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
-$font-family: 'Open Sans', sans-serif;
-$banner-content-color: white;
-$banner-content-weight: 100;
-$banner-headline-size: 4.5em;
-$banner-subtext-size: 1em;
-$theme-colors: (
-  "primary": #0074d9,
-  "danger": yellow
-);
-
-
 .motivacional{
     position: absolute;
+    width: 60%;
     bottom: 25%;
     left: 10%;
     color: $banner-content-color;
     @include flex-column-right-aligned();
         span{
             text-transform: uppercase;
-            width: 85%;
+            flex-shrink: 1;
             font-family: $font-family;
             margin-bottom: 10px;
             letter-spacing: 0.25em;
@@ -53,7 +30,30 @@ $theme-colors: (
             color: $banner-content-color;
             text-transform: uppercase;
             padding: 20px 30px !important;
-            width: 15% !important;
-            border-radius: none !important;
+            width: 200px !important;
+            border-radius: 0px;
         }
+}
+
+@include media-breakpoint-down(sm) {
+    .motivacional {
+        width: 75%;
+        bottom: 15%;
+        left: 5%;
+        .headline{
+            font-size: 2.5em;
+        }
+        .subtext{
+            font-size: 1em;
+        }
+        button{
+            width:150px !important;
+        }
+    }
+    .carousel{
+        .carousel-item{
+            height: 85vh;
+            background-position-x: 50%;
+        } 
+    }
 }

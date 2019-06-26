@@ -4,7 +4,7 @@
   "description": "\"It's our toucans-01 team project for Chingu Voyage 9\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compileSass": "sass --watch sass/index.scss:css/app.css"
   },
   "repository": {
     "type": "git",
