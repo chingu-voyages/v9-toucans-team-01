@@ -1,0 +1,95 @@
+#about-sportify{
+    .about-content{
+        @import "read-more-button";
+        .right-side-content{
+            img{
+                max-width: 100%;
+                max-height:100%;
+            }
+        }
+        .headline .title{
+            font-weight: bold;
+            font-size: 3em;
+            letter-spacing: .25em;
+        }
+        .headline .subtitle{
+            font-weight: bold;
+            font-size: .9em;
+            letter-spacing: .35em;
+        }
+        .headline .subtitle, .content-text{
+            color: #9F9F9F;
+        }
+        .content-text{
+            margin-top: 25px;
+            font-size: .9em;
+            line-height: 2em;
+        }
+        .read-more-button{
+            color: black
+        }
+        .read-more-button:hover{
+            color: white;
+        }
+    }
+    hr{
+        background-color: #DFDFDF;
+        height: .5px;
+        width: 80vw;
+    }
+    .quote{
+        margin: 75px auto;
+        width: 75vw;
+        text-align: center;
+        blockquote{
+            font-weight: 600;
+            font-style: oblique;
+            font-size: 2em;
+            margin-bottom: 50px
+        }
+        .blockquote-author{
+            font-weight: bold
+        }
+    }
+
+    @include media-breakpoint-up(lg) { 
+        .left-side-content, .right-side-content{
+            margin: none;
+        }
+        .left-side-content{
+            width: 50vw;
+            height:90vh;
+            margin-right: 25px;
+        }
+        .right-side-content{
+            margin: auto;
+            width: 400px;
+            height:450px;
+        }
+    }   
+    @include media-breakpoint-down(md) { 
+        .left-side-content{
+            margin: 100px auto;
+            .content-text{
+                font-size: .9em;
+            }
+            .headline .title{
+                font-size: 2em;
+                margin-top: 10px;
+            }
+            .headline .subtitle{
+                font-size: .9em;
+            }
+        }
+        .right-side-content{
+            margin-bottom: 50px
+        }
+        .quote blockquote{
+            font-size: .95em
+        }
+        .quote .blockquote-author{
+            font-size: .75em;
+            font-weight: normal;
+        }
+    }
+}
