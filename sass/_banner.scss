@@ -4,7 +4,14 @@
     .carousel-item{
         height: 125vh;
         width: 100%;
-        background: url(../assets/imgs/index.webp);
+
+        // background-color: rgba(255,255,255,1);
+        // line
+        background: linear-gradient(to right, rgba(255,255,255,0.1) 0%, rgba(255,0,0,0.57) 70%), url(../assets/imgs/index.webp);
+        background-blend-mode:soft-light;
+
+        // background: @include filter-gradient(#ffffff, #c027e6, horizontal);
+        // background: @include background-image(linear-gradient(left, rgba(255,255,255,1) 0%, rgba(192,39,230,0.37) 100%));
         background-size: cover;
         background-position-x: 50%;
         background-repeat: no-repeat;
@@ -21,7 +28,7 @@
     justify-content: flex-start;
     left: -6%;
     li{
-        background-color: transparentize(red, 1%);
+        background-color: transparentize($danger, 1%);
         color: white;
         height: 50px;
         width: 50px;
@@ -33,7 +40,7 @@
         justify-content: center;
     }
     li.active{
-        background-color: opacify(red,1%);
+        background-color: opacify($danger,1%);
     }
 }
 

@@ -1,0 +1,36 @@
+#about-programs{       
+    background-color: red;
+    .ap-section{
+        height: 70vh;
+        color: white;
+        padding: 0 40px;
+        text-align: center;
+        @include flex-column-centered;
+        div{
+            margin: 15px auto;
+        }
+        .icon-container{
+            width: 50px;
+            height: 50px;
+            img{
+                width: 100%;
+                height: 100%
+            }
+        }
+        .ap-section-text{
+            h2{
+                font-size: 1em; 
+                letter-spacing: .25em;
+                margin-bottom: 25px;
+                font-weight: bold
+            }
+            p{
+                line-height: 2em;
+                font-size: .9em; 
+            }
+        }
+    }
+    #basics{ background-color: map-get($map: $theme-colors, $key: "danger")}
+    #train-hard{ background-color: map-get($map: $theme-colors, $key: "blue")}
+    #aerobics{ background-color: map-get($map: $theme-colors, $key: "dark-blue")}
+}
