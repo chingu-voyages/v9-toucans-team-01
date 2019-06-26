@@ -30,6 +30,8 @@
   --dark: #343a40;
   --blue: #3C098D;
   --dark-blue: #190A49;
+  --grey: #909090;
+  --white: #ffffff;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1756,6 +1758,46 @@ pre code {
   background-color: #b1abc1;
 }
 
+.table-grey,
+.table-grey > th,
+.table-grey > td {
+  background-color: #e0e0e0;
+}
+.table-grey th,
+.table-grey td,
+.table-grey thead th,
+.table-grey tbody + tbody {
+  border-color: #c5c5c5;
+}
+
+.table-hover .table-grey:hover {
+  background-color: lightgray;
+}
+.table-hover .table-grey:hover > td,
+.table-hover .table-grey:hover > th {
+  background-color: lightgray;
+}
+
+.table-white,
+.table-white > th,
+.table-white > td {
+  background-color: white;
+}
+.table-white th,
+.table-white td,
+.table-white thead th,
+.table-white tbody + tbody {
+  border-color: white;
+}
+
+.table-hover .table-white:hover {
+  background-color: #f2f2f2;
+}
+.table-hover .table-white:hover > td,
+.table-hover .table-white:hover > th {
+  background-color: #f2f2f2;
+}
+
 .table-active,
 .table-active > th,
 .table-active > td {
@@ -2607,6 +2649,60 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(60, 47, 100, 0.5);
 }
 
+.btn-grey {
+  color: #fff;
+  background-color: #909090;
+  border-color: #909090;
+}
+.btn-grey:hover {
+  color: #fff;
+  background-color: #7d7d7d;
+  border-color: #777777;
+}
+.btn-grey:focus, .btn-grey.focus {
+  box-shadow: 0 0 0 0.2rem rgba(161, 161, 161, 0.5);
+}
+.btn-grey.disabled, .btn-grey:disabled {
+  color: #fff;
+  background-color: #909090;
+  border-color: #909090;
+}
+.btn-grey:not(:disabled):not(.disabled):active, .btn-grey:not(:disabled):not(.disabled).active, .show > .btn-grey.dropdown-toggle {
+  color: #fff;
+  background-color: #777777;
+  border-color: #707070;
+}
+.btn-grey:not(:disabled):not(.disabled):active:focus, .btn-grey:not(:disabled):not(.disabled).active:focus, .show > .btn-grey.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(161, 161, 161, 0.5);
+}
+
+.btn-white {
+  color: #212529;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+.btn-white:hover {
+  color: #212529;
+  background-color: #ececec;
+  border-color: #e6e6e6;
+}
+.btn-white:focus, .btn-white.focus {
+  box-shadow: 0 0 0 0.2rem rgba(222, 222, 223, 0.5);
+}
+.btn-white.disabled, .btn-white:disabled {
+  color: #212529;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+.btn-white:not(:disabled):not(.disabled):active, .btn-white:not(:disabled):not(.disabled).active, .show > .btn-white.dropdown-toggle {
+  color: #212529;
+  background-color: #e6e6e6;
+  border-color: #dfdfdf;
+}
+.btn-white:not(:disabled):not(.disabled):active:focus, .btn-white:not(:disabled):not(.disabled).active:focus, .show > .btn-white.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(222, 222, 223, 0.5);
+}
+
 .btn-outline-primary {
   color: #0074d9;
   border-color: #0074d9;
@@ -2855,6 +2951,56 @@ fieldset:disabled a.btn {
 }
 .btn-outline-dark-blue:not(:disabled):not(.disabled):active:focus, .btn-outline-dark-blue:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-dark-blue.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(25, 10, 73, 0.5);
+}
+
+.btn-outline-grey {
+  color: #909090;
+  border-color: #909090;
+}
+.btn-outline-grey:hover {
+  color: #fff;
+  background-color: #909090;
+  border-color: #909090;
+}
+.btn-outline-grey:focus, .btn-outline-grey.focus {
+  box-shadow: 0 0 0 0.2rem rgba(144, 144, 144, 0.5);
+}
+.btn-outline-grey.disabled, .btn-outline-grey:disabled {
+  color: #909090;
+  background-color: transparent;
+}
+.btn-outline-grey:not(:disabled):not(.disabled):active, .btn-outline-grey:not(:disabled):not(.disabled).active, .show > .btn-outline-grey.dropdown-toggle {
+  color: #fff;
+  background-color: #909090;
+  border-color: #909090;
+}
+.btn-outline-grey:not(:disabled):not(.disabled):active:focus, .btn-outline-grey:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-grey.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(144, 144, 144, 0.5);
+}
+
+.btn-outline-white {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.btn-outline-white:hover {
+  color: #212529;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+.btn-outline-white:focus, .btn-outline-white.focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+.btn-outline-white.disabled, .btn-outline-white:disabled {
+  color: #ffffff;
+  background-color: transparent;
+}
+.btn-outline-white:not(:disabled):not(.disabled):active, .btn-outline-white:not(:disabled):not(.disabled).active, .show > .btn-outline-white.dropdown-toggle {
+  color: #212529;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+.btn-outline-white:not(:disabled):not(.disabled):active:focus, .btn-outline-white:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-white.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
 }
 
 .btn-link {
@@ -4720,6 +4866,32 @@ a.badge-dark-blue:focus, a.badge-dark-blue.focus {
   box-shadow: 0 0 0 0.2rem rgba(25, 10, 73, 0.5);
 }
 
+.badge-grey {
+  color: #fff;
+  background-color: #909090;
+}
+a.badge-grey:hover, a.badge-grey:focus {
+  color: #fff;
+  background-color: #777777;
+}
+a.badge-grey:focus, a.badge-grey.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(144, 144, 144, 0.5);
+}
+
+.badge-white {
+  color: #212529;
+  background-color: #ffffff;
+}
+a.badge-white:hover, a.badge-white:focus {
+  color: #212529;
+  background-color: #e6e6e6;
+}
+a.badge-white:focus, a.badge-white.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
@@ -4883,6 +5055,30 @@ a.badge-dark-blue:focus, a.badge-dark-blue.focus {
 }
 .alert-dark-blue .alert-link {
   color: black;
+}
+
+.alert-grey {
+  color: #4b4b4b;
+  background-color: #e9e9e9;
+  border-color: #e0e0e0;
+}
+.alert-grey hr {
+  border-top-color: lightgray;
+}
+.alert-grey .alert-link {
+  color: #323232;
+}
+
+.alert-white {
+  color: #858585;
+  background-color: white;
+  border-color: white;
+}
+.alert-white hr {
+  border-top-color: #f2f2f2;
+}
+.alert-white .alert-link {
+  color: #6c6c6c;
 }
 
 @keyframes progress-bar-stripes {
@@ -5246,6 +5442,34 @@ a.badge-dark-blue:focus, a.badge-dark-blue.focus {
   color: #fff;
   background-color: #0d0526;
   border-color: #0d0526;
+}
+
+.list-group-item-grey {
+  color: #4b4b4b;
+  background-color: #e0e0e0;
+}
+.list-group-item-grey.list-group-item-action:hover, .list-group-item-grey.list-group-item-action:focus {
+  color: #4b4b4b;
+  background-color: lightgray;
+}
+.list-group-item-grey.list-group-item-action.active {
+  color: #fff;
+  background-color: #4b4b4b;
+  border-color: #4b4b4b;
+}
+
+.list-group-item-white {
+  color: #858585;
+  background-color: white;
+}
+.list-group-item-white.list-group-item-action:hover, .list-group-item-white.list-group-item-action:focus {
+  color: #858585;
+  background-color: #f2f2f2;
+}
+.list-group-item-white.list-group-item-action.active {
+  color: #fff;
+  background-color: #858585;
+  border-color: #858585;
 }
 
 .close {
@@ -6099,6 +6323,26 @@ button.bg-dark-blue:focus {
   background-color: #0a041c !important;
 }
 
+.bg-grey {
+  background-color: #909090 !important;
+}
+
+a.bg-grey:hover, a.bg-grey:focus,
+button.bg-grey:hover,
+button.bg-grey:focus {
+  background-color: #777777 !important;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+a.bg-white:hover, a.bg-white:focus,
+button.bg-white:hover,
+button.bg-white:focus {
+  background-color: #e6e6e6 !important;
+}
+
 .bg-white {
   background-color: #fff !important;
 }
@@ -6185,6 +6429,14 @@ button.bg-dark-blue:focus {
 
 .border-dark-blue {
   border-color: #190A49 !important;
+}
+
+.border-grey {
+  border-color: #909090 !important;
+}
+
+.border-white {
+  border-color: #ffffff !important;
 }
 
 .border-white {
@@ -9785,6 +10037,22 @@ a.text-dark-blue:hover, a.text-dark-blue:focus {
   color: #020106 !important;
 }
 
+.text-grey {
+  color: #909090 !important;
+}
+
+a.text-grey:hover, a.text-grey:focus {
+  color: #6a6a6a !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+a.text-white:hover, a.text-white:focus {
+  color: #d9d9d9 !important;
+}
+
 .text-body {
   color: #212529 !important;
 }
@@ -9930,6 +10198,7 @@ h3 {
 
 body {
   background-color: white;
+  overflow-x: hidden;
 }
 
 .carousel {
@@ -10003,6 +10272,7 @@ body {
 .motivacional .read-more-button {
   margin-top: 25px;
   font-size: 0.8em;
+  font-weight: bold;
   color: white;
   text-transform: uppercase;
   padding: 20px 30px !important;
@@ -10078,6 +10348,7 @@ body {
 #about-sportify .about-content .read-more-button {
   margin-top: 25px;
   font-size: 0.8em;
+  font-weight: bold;
   color: white;
   text-transform: uppercase;
   padding: 20px 30px !important;
@@ -10169,6 +10440,84 @@ body {
   #about-sportify .quote .blockquote-author {
     font-size: 0.75em;
     font-weight: normal;
+  }
+}
+
+#aerobics-program {
+  background-color: #190A49;
+  width: 100%;
+}
+#aerobics-program .text-content {
+  color: #909090;
+}
+#aerobics-program .text-content .headline .subtitle, #aerobics-program .text-content .headline .title {
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+#aerobics-program .text-content .headline .title {
+  margin-top: 10px;
+  color: #ffffff;
+}
+#aerobics-program .text-content .content-list ul {
+  padding: 0;
+  margin-top: 50px;
+  list-style: none;
+}
+#aerobics-program .text-content .content-list li {
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+  margin-bottom: 25px;
+}
+#aerobics-program .text-content .content-list li span {
+  margin-left: 15px;
+  display: block;
+  width: 90%;
+}
+#aerobics-program .girl-training {
+  background-image: url(../assets/imgs/cta.jpg);
+  background-size: cover;
+  background-position-x: 50%;
+  width: 100vw;
+  height: 130vh;
+}
+#aerobics-program .buttons-read-more .read-more-button {
+  margin-top: 25px;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px 30px !important;
+  width: 200px !important;
+  border-radius: 0px;
+}
+#aerobics-program .buttons-read-more .read-more-button {
+  width: 175px !important;
+  margin-right: 15px;
+}
+#aerobics-program .text-content {
+  padding: 50px 15px;
+}
+#aerobics-program .text-content .headline .title {
+  font-size: 2em;
+}
+#aerobics-program .text-content .content-list {
+  margin-bottom: 25px;
+}
+@media (min-width: 992px) {
+  #aerobics-program {
+    height: 650px;
+  }
+  #aerobics-program .girl-training {
+    width: 45vw;
+    height: 100%;
+  }
+  #aerobics-program .text-content {
+    width: 70vw;
+    padding: 100px;
+  }
+  #aerobics-program .text-content .headline .title {
+    font-size: 3em;
   }
 }
 
