@@ -10197,6 +10197,8 @@ h3 {
 }
 
 body {
+  padding: 0;
+  margin: 0;
   background-color: white;
   overflow-x: hidden;
 }
@@ -10241,7 +10243,7 @@ body {
 
 .motivacional {
   position: absolute;
-  width: 60%;
+  width: 75%;
   bottom: 25%;
   left: 10%;
   color: white;
@@ -10280,11 +10282,22 @@ body {
   border-radius: 0px;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 1199.98px) {
+  .motivacional .headline {
+    font-size: 3.25em;
+  }
+  .motivacional .subtext {
+    font-size: 1em;
+  }
+}
+@media (max-width: 575.98px) {
   .motivacional {
     width: 75%;
     bottom: 15%;
     left: 5%;
+  }
+  .motivacional button {
+    width: 150px !important;
   }
   .motivacional .headline {
     font-size: 2.5em;
@@ -10292,17 +10305,16 @@ body {
   .motivacional .subtext {
     font-size: 1em;
   }
-  .motivacional button {
-    width: 150px !important;
-  }
-
-  .carousel .carousel-item {
-    height: 85vh;
-    background-position-x: 50%;
+}
+@media (max-width: 575.98px) {
+  .motivacional {
+    top: 40vh;
   }
 }
-#about-programs {
-  background-color: red;
+@media (max-width: 991.98px) {
+  .carousel .carousel-item {
+    background-position-x: 70%;
+  }
 }
 #about-programs .ap-section {
   height: 70vh;
@@ -10335,7 +10347,7 @@ body {
   line-height: 2em;
   font-size: 0.9em;
 }
-#about-programs #basics {
+#about-programs #basic {
   background-color: #FF0E3B;
 }
 #about-programs #train-hard {
@@ -10519,6 +10531,63 @@ body {
   #aerobics-program .text-content .headline .title {
     font-size: 3em;
   }
+}
+
+#navbar-header {
+  position: absolute;
+  z-index: 100;
+  top: 10vh;
+  transition: all 0.25s;
+}
+#navbar-header #nav {
+  height: 93px;
+  border-bottom: 3px solid #FF0E3B;
+  background-color: #190A49;
+}
+#navbar-header #nav .collapse.navbar-collapse .bold .nav-item {
+  font-weight: bold;
+}
+#navbar-header #nav .collapse.navbar-collapse .navbar-nav {
+  margin-top: 10px;
+}
+#navbar-header #nav .collapse.navbar-collapse .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+  color: #ffffff;
+}
+#navbar-header #nav .collapse.navbar-collapse .navbar-nav .nav-item:hover .nav-link, #navbar-header #nav .collapse.navbar-collapse .navbar-nav .nav-item.active .nav-link {
+  color: #FF0E3B;
+  transition: all 0.3s !important;
+}
+#navbar-header #nav .collapse.navbar-collapse #navigation-buttons {
+  font-size: 0.9em;
+}
+#navbar-header #nav .collapse.navbar-collapse #navigation-buttons .nav-item .nav-link:not(.last) {
+  margin: 15px;
+}
+#navbar-header #nav .collapse.navbar-collapse #social-media-icons {
+  font-size: 0.85em;
+}
+#navbar-header #nav .collapse.navbar-collapse #social-media-icons .nav-item .nav-link:not(.last) {
+  margin-right: 10px;
+}
+@media (min-width: 992px) {
+  #navbar-header {
+    right: 5vw;
+    width: 90vw;
+  }
+}
+@media (max-width: 991.98px) {
+  #navbar-header {
+    right: 3.5vw;
+    width: 90vw;
+  }
+}
+
+#navbar-header.full-width-fixed {
+  width: 100vw;
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -7,51 +7,73 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sportify</title>
     <!-- Importing font-awesome -->
-    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <!-- Importing our own css style file (that is a sass compiled css file) -->
     <link rel="stylesheet" href="css/app.css">
+    <!-- <link rel="stylesheet" href="css/font-awesome/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- navbar-header section -->
+    <div id="navbar-header" class="full-width-fixed"> 
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand ml-md-5 ml-3" href="#">
+                <img src="assets/imgs/logo.webp" alt="sportify-logo">
+            </a>
+            <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav> -->
-
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul id="navigation-buttons" class="navbar-nav mx-auto bold">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="last nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <ul id="social-media-icons" class="navbar-nav mr-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-facebook-f    "></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-dribbble"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link last" href="#">
+                            <i class="fa fa-behance" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- end navbar-header section -->
+    
     <!-- banner section -->
     <div id="banner-section">
         <div id="banner-carousel" class="carousel slide" data-ride="carousel">
@@ -188,10 +210,14 @@
             </div>
             <div class="content-list">
                 <ul>
-                    <li><img src="assets/imgs/check.png" alt="check-icon"><span>Pellentesque imperdiet auctor eros, sit amet ornare mauris malesuada in.</span></li>
-                    <li><img src="assets/imgs/check.png" alt="check-icon"><span>Duis rutrum nisi tempus finibus luctus. Sed porta vel lacus quis lacinia.</span></li>
-                    <li><img src="assets/imgs/check.png" alt="check-icon"><span>Vestibulum nec justo lectus. In hac habitasse platea dictumst.</span></li>
-                    <li><img src="assets/imgs/check.png" alt="check-icon"><span>Proin vulputate rhoncus nibh eu vehicula. Donec vitae laoreet quam, ac feugiat nibh.</span></li>
+                    <li><img src="assets/imgs/check.png" alt="check-icon"><span>Pellentesque imperdiet auctor eros, sit
+                            amet ornare mauris malesuada in.</span></li>
+                    <li><img src="assets/imgs/check.png" alt="check-icon"><span>Duis rutrum nisi tempus finibus luctus.
+                            Sed porta vel lacus quis lacinia.</span></li>
+                    <li><img src="assets/imgs/check.png" alt="check-icon"><span>Vestibulum nec justo lectus. In hac
+                            habitasse platea dictumst.</span></li>
+                    <li><img src="assets/imgs/check.png" alt="check-icon"><span>Proin vulputate rhoncus nibh eu
+                            vehicula. Donec vitae laoreet quam, ac feugiat nibh.</span></li>
                 </ul>
             </div>
             <div class="buttons-read-more">
@@ -203,11 +229,12 @@
     <!-- end of aerobics program section -->
 
     <!-- Importing Jquery -->
-    <script src="node_modules/jquery/dist/jquery.slim.js"></script>
+    <script src="js/jquery/jquery.slim.js"></script>
     <!-- Importing popper.js file -->
-    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="js/popper/popper.js"></script>
     <!-- Importing bootstrap.js file -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="js/navbar-header.js"></script>
 </body>
 
 </html>
