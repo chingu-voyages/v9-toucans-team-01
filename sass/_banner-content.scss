@@ -1,6 +1,6 @@
 .motivacional{
     position: absolute;
-    width: 60%;
+    width: 75%;
     bottom: 25%;
     left: 10%;
     color: $banner-content-color;
@@ -27,25 +27,43 @@
         @import "read-more-button";
 }
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(lg){
+    .motivacional{
+        .headline{
+            font-size: 3.25em;
+        }
+        .subtext{
+            font-size: 1em;
+        }
+    }
+}
+@include media-breakpoint-down(xs) {
     .motivacional {
         width: 75%;
         bottom: 15%;
         left: 5%;
+        button{
+            width:150px !important;
+        }
         .headline{
             font-size: 2.5em;
         }
         .subtext{
             font-size: 1em;
         }
-        button{
-            width:150px !important;
-        }
     }
+}
+
+@include media-breakpoint-only(xs){
+    .motivacional{
+        top: 40vh;
+    }
+}
+
+@include media-breakpoint-down(md){
     .carousel{
         .carousel-item{
-            height: 85vh;
-            background-position-x: 50%;
-        } 
+            background-position-x: 70%;
+        }
     }
 }

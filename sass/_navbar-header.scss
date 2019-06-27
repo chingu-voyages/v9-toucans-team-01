@@ -1,0 +1,57 @@
+#navbar-header{
+    z-index: 10;
+    top: 10vh;
+
+    #nav{
+        height: 93px;
+        border-bottom: 3px solid map-get($map: $theme-colors, $key: "danger" );
+        background-color: map-get($map: $theme-colors, $key: "dark-blue");
+        .collapse.navbar-collapse{
+            .bold{
+                .nav-item{
+                    font-weight: bold;
+                }
+            }
+            .navbar-nav{
+                margin-top: 10px;
+                .nav-item{
+                    .nav-link{
+                        text-transform: uppercase;
+                        color: map-get($map: $theme-colors, $key: "white");
+                    }
+                }
+                .nav-item:hover, .nav-item.active{
+                    .nav-link{
+                        color: map-get($map: $theme-colors, $key: "danger");
+                        transition: all .3s !important;
+                    }
+                }
+            }
+            #navigation-buttons{
+                font-size: .9em;
+                .nav-item{
+                    .nav-link:not(.last){
+                        margin: 15px
+                    }
+                }
+            }
+            #social-media-icons{
+                font-size: 0.85em;
+                .nav-item{
+                    .nav-link:not(.last){
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    @include media-breakpoint-up(lg){
+        right: 5vw;
+        width: 90vw;
+    }
+    @include media-breakpoint-between(xs,md){
+        right: 3.5vw;
+        width: 90vw;
+    }
+    
+}
