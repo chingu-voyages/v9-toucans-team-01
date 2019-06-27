@@ -53,11 +53,81 @@
     @include media-breakpoint-between(xs,md){
         right: 3.5vw;
         width: 90vw;
+    }
+    .collapsing {
+        -webkit-transition: none;
+        transition: none;
+        display: none;
     }   
+}
+#navbar-header{
+    #nav{
+        .collapse.navbar-collapse.show{
+            @include media-breakpoint-between(xs,md){
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: transparentize($color: map-get($map: $theme-colors, $key: "dark-blue" ), $amount: .25%);
+                #close{
+                    position: absolute;
+                    right: 5vw;
+                    top:5vh;
+                    border: none;
+                    font-size: .75em;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    letter-spacing: .25em;
+                    transition: all 0.25s;
+                    color: map-get($map: $theme-colors, $key:"white" )
+                }
+                #close:hover{
+                    color: map-get($map: $theme-colors, $key: "danger" );
+                }
+                #close:active{
+                    outline: none;
+                }
+                
+                #navigation-buttons.navbar-nav{
+                    @include flex-column-centered();
+                    margin-top: 15vh;
+                    li.nav-item{
+                        font-size: 2em;
+                    }
+                    li.nav-item.active{
+                        .nav-link{
+                            color: map-get($map: $theme-colors, $key: "white");
+                        }
+                    }
+                    li.nav-item.active:hover{
+                        .nav-link{
+                            color: map-get($map: $theme-colors, $key: "danger");
+                        }
+                    }
+                }
+                #social-media-icons.navbar-nav{
+                    @include flex-row-centered();
+                    margin: 5vh 10vw;
+                    li.nav-item a.nav-link{
+                        margin-right: 30px;
+                    }
+                }
+            }
+        }
+    }
 }
 #navbar-header.full-width-fixed{
     width: 100vw;
     position: fixed;
     right: 0;
-    top: 0
+    top: 0;
+    #nav{
+        height: 65px;
+        .navbar-brand{
+            img{
+                max-width: 75%;
+            }
+        }
+    }
 }

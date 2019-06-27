@@ -1,9 +1,13 @@
+// .motivacional#visible{
+//     visibility: visible;
+// }
 .motivacional{
     position: absolute;
     width: 75%;
     bottom: 25%;
     left: 10%;
     color: $banner-content-color;
+    // visibility: hidden;
     @include flex-column-right-aligned();
         span{
             text-transform: uppercase;
