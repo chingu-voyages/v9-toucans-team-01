@@ -10534,8 +10534,10 @@ body {
 }
 
 #navbar-header {
-  z-index: 10;
+  position: absolute;
+  z-index: 100;
   top: 10vh;
+  transition: all 0.25s;
 }
 #navbar-header #nav {
   height: 93px;
@@ -10579,6 +10581,13 @@ body {
     right: 3.5vw;
     width: 90vw;
   }
+}
+
+#navbar-header.full-width-fixed {
+  width: 100vw;
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 
 /*# sourceMappingURL=app.css.map */
