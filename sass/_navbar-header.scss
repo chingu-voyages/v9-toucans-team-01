@@ -125,6 +125,13 @@
                     }
                 }
             }
+            @include media-breakpoint-down(sm){
+                #navigation-buttons.navbar-nav{
+                    li.nav-item{
+                        font-size: 1em;
+                    }
+                }
+            }
         }
     }
 }

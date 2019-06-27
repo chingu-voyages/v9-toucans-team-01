@@ -10656,6 +10656,11 @@ body {
     margin-right: 30px;
   }
 }
+@media (max-width: 767.98px) {
+  #navbar-header #nav .collapse.navbar-collapse.show #navigation-buttons.navbar-nav li.nav-item {
+    font-size: 1em;
+  }
+}
 
 #navbar-header.full-width-fixed {
   width: 100vw;
