@@ -10584,6 +10584,17 @@ body {
     right: 3.5vw;
     width: 90vw;
   }
+  #navbar-header #hamburger-button {
+    width: 22px;
+    height: 22px;
+    border: none;
+  }
+  #navbar-header #hamburger-button span {
+    color: #ffffff;
+  }
+  #navbar-header #hamburger-button:active {
+    outline: none !important;
+  }
 }
 #navbar-header .collapsing {
   -webkit-transition: none;

@@ -53,6 +53,17 @@
     @include media-breakpoint-between(xs,md){
         right: 3.5vw;
         width: 90vw;
+        #hamburger-button{
+            width: 22px;
+            height:22px;
+            border: none;
+            span{
+                color: map-get($map: $theme-colors, $key: "white" )
+            }
+        }
+        #hamburger-button:active{
+            outline:none !important;
+        }
     }
     .collapsing {
         -webkit-transition: none;
