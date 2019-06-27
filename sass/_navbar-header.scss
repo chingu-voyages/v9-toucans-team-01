@@ -102,9 +102,13 @@
                 
                 #navigation-buttons.navbar-nav{
                     @include flex-column-centered();
-                    margin-top: 15vh;
+                    margin-top: 20vh;
                     li.nav-item{
                         font-size: 2em;
+                        
+                    }
+                    li.nav-item:not(.first){
+                        margin-top: -30px;
                     }
                     li.nav-item.active{
                         .nav-link{
@@ -126,10 +130,15 @@
                 }
             }
             @include media-breakpoint-down(sm){
-                #navigation-buttons.navbar-nav{
+                #navigation-buttons.navbar-nav, #social-media-icons.navbar-nav{
                     li.nav-item{
-                        font-size: 1em;
+                        font-size: 2.5vh;
                     }
+                }
+            }
+            @include media-breakpoint-only(xs){
+                #social-media-icons.navbar-nav{
+                    margin: 5vh 25vw;
                 }
             }
         }
