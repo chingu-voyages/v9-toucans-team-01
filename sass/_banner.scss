@@ -27,11 +27,11 @@
     position: position;
     justify-content: flex-start;
     left: -6%;
-    li{
-        background-color: transparentize($danger, 1%);
+    li{ 
+        background-color: transparentize(map-get($map: $theme-colors, $key: "danger") , 1%);
         color: white;
-        height: 50px;
-        width: 50px;
+        height: 45px;
+        width: 45px;
         border-radius: 50%;
         text-indent: 0;
         display: flex;
@@ -39,8 +39,11 @@
         align-items: center;
         justify-content: center;
     }
+    li:not(.first){
+        margin-left: -10px
+    }
     li.active{
-        background-color: opacify($danger,1%);
+        background-color: opacify(map-get($map: $theme-colors, $key: "danger"),1%);
     }
 }
 

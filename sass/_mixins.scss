@@ -4,6 +4,12 @@
     justify-content: center;
     align-items: center;
 }
+@mixin flex-row-centered{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 @mixin flex-column-right-aligned{
     display: flex;
     flex-direction: column;

@@ -16,22 +16,24 @@
 <body>
 
     <!-- navbar-header section -->
-    <div id="navbar-header" class="full-width-fixed"> 
+    <div id="navbar-header" > 
         <nav id="nav" class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand ml-md-5 ml-3" href="#">
+            <a class="navbar-brand ml-md-5 ml-4" href="#">
                 <img src="assets/imgs/logo.webp" alt="sportify-logo">
             </a>
-            <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            <button id="hamburger-button" class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="fa fa-bars"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <button id="close" class="close-button d-block d-lg-none navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">close</button>
                 <ul id="navigation-buttons" class="navbar-nav mx-auto bold">
-                    <li class="nav-item active">
+                    <li class="nav-item active  ">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <a class="nav-link" href="#">About us</a>
                     </li>
                     <li class="nav-item">
@@ -78,30 +80,30 @@
     <div id="banner-section">
         <div id="banner-carousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators d-none d-md-flex">
-                <li data-target="#banner-carousel" data-slide-to="0" class="active">.01</li>
-                <li data-target="#banner-carousel" data-slide-to="1">.02</li>
-                <li data-target="#banner-carousel" data-slide-to="2">.03</li>
+                <li data-target="#banner-carousel" data-slide-to="0" class="active first">01.</li>
+                <li data-target="#banner-carousel" data-slide-to="1">02.</li>
+                <li data-target="#banner-carousel" data-slide-to="2">03.</li>
             </ol>
             <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active" data-interval="5000">
+                <div class="carousel-item active" data-interval="3000">
                     <div class="motivacional">
                         <span class="subtext">go to the gym now!</span>
                         <span class="headline"><b>never</b> limit yourself</span>
-                        <button type="button" class="btn btn-outline-danger btn-lg read-more-button">read more</button>
+                        <button type="button" class="btn btn-danger btn-lg read-more-button">read more</button>
                     </div>
                 </div>
-                <div class="carousel-item" data-interval="5000">
+                <div class="carousel-item" data-interval="3000">
                     <div class="motivacional">
                         <span class="subtext">go to the gym now!</span>
                         <span class="headline"><b>never</b> limit yourself</span>
-                        <button type="button" class="btn btn-outline-danger btn-lg read-more-button">read more</button>
+                        <button type="button" class="btn btn-danger btn-lg read-more-button">read more</button>
                     </div>
                 </div>
-                <div class="carousel-item" data-interval="5000">
+                <div class="carousel-item" data-interval="3000">
                     <div class="motivacional">
                         <span class="subtext">go to the gym now!</span>
                         <span class="headline"><b>never</b> limit yourself</span>
-                        <button type="button" class="btn btn-outline-danger btn-lg read-more-button">read more</button>
+                        <button type="button" class="btn btn-danger btn-lg read-more-button">read more</button>
                     </div>
                 </div>
             </div>
@@ -229,12 +231,13 @@
     <!-- end of aerobics program section -->
 
     <!-- Importing Jquery -->
-    <script src="js/jquery/jquery.slim.js"></script>
+    <!-- <script src="js/jquery/jquery.slim.js"></script> -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <!-- Importing popper.js file -->
     <script src="js/popper/popper.js"></script>
     <!-- Importing bootstrap.js file -->
     <script src="js/bootstrap/bootstrap.js"></script>
-    <script src="js/navbar-header.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
