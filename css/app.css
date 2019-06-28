@@ -10286,24 +10286,27 @@ body {
 }
 
 @media (max-width: 1199.98px) {
+  .motivacional {
+    width: 50vw;
+  }
   .motivacional .headline {
-    font-size: 3.25em;
+    font-size: 4em;
   }
   .motivacional .subtext {
     font-size: 1em;
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   .motivacional {
-    width: 75%;
-    bottom: 15%;
+    width: 75vw;
+    top: 25vh;
     left: 5%;
   }
   .motivacional button {
     width: 150px !important;
   }
   .motivacional .headline {
-    font-size: 2.5em;
+    font-size: 3em;
   }
   .motivacional .subtext {
     font-size: 1em;
@@ -10311,12 +10314,17 @@ body {
 }
 @media (max-width: 575.98px) {
   .motivacional {
-    top: 40vh;
+    top: 30vh;
   }
 }
 @media (max-width: 991.98px) {
   .carousel .carousel-item {
     background-position-x: 70%;
+  }
+}
+@media (max-width: 991.98px) {
+  #banner-carousel .carousel-inner .carousel-item {
+    height: 85vh;
   }
 }
 #about-programs .ap-section {
@@ -10536,6 +10544,11 @@ body {
   }
 }
 
+@media (max-width: 991.98px) {
+  #navbar-header {
+    top: 5vh;
+  }
+}
 #navbar-header {
   position: absolute;
   z-index: 100;
@@ -10590,7 +10603,11 @@ body {
     border: none;
   }
   #navbar-header #hamburger-button span {
+    transition: all 0.3s !important;
     color: #ffffff;
+  }
+  #navbar-header #hamburger-button:hover span {
+    color: #FF0E3B;
   }
   #navbar-header #hamburger-button:active {
     outline: none !important;
@@ -10681,6 +10698,12 @@ body {
 }
 #navbar-header.full-width-fixed #nav .navbar-brand img {
   max-width: 75%;
+}
+
+@media (max-width: 991.98px) {
+  #navbar-header {
+    top: 2.5vh;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

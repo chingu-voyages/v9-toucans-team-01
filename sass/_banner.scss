@@ -47,4 +47,15 @@
     }
 }
 
-@import "banner-content"
+@import "banner-content";
+
+
+@include media-breakpoint-between(xs, md){
+    #banner-carousel{
+        .carousel-inner{
+            .carousel-item{
+                height: 85vh;
+            }
+        }
+    }
+}

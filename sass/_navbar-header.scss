@@ -1,3 +1,9 @@
+@include media-breakpoint-between(xs, md){
+    #navbar-header{
+        top: 5vh;
+    }
+}
+
 #navbar-header{
     position: absolute;
     z-index: 100;
@@ -58,7 +64,13 @@
             height:22px;
             border: none;
             span{
+                transition: all .3s !important;
                 color: map-get($map: $theme-colors, $key: "white" )
+            }
+        }
+        #hamburger-button:hover{
+            span{
+                color: map-get($map: $theme-colors, $key: "danger")
             }
         }
         #hamburger-button:active{
@@ -156,5 +168,10 @@
                 max-width: 75%;
             }
         }
+    }
+}
+@include media-breakpoint-between(xs, md){
+    #navbar-header{
+        top: 2.5vh;
     }
 }

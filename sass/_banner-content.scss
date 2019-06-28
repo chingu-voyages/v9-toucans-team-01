@@ -33,24 +33,25 @@
 
 @include media-breakpoint-down(lg){
     .motivacional{
+        width: 50vw;
         .headline{
-            font-size: 3.25em;
+            font-size: 4em;
         }
         .subtext{
             font-size: 1em;
         }
     }
 }
-@include media-breakpoint-down(xs) {
+@include media-breakpoint-down(md) {
     .motivacional {
-        width: 75%;
-        bottom: 15%;
+        width: 75vw;
+        top: 25vh;
         left: 5%;
         button{
             width:150px !important;
         }
         .headline{
-            font-size: 2.5em;
+            font-size: 3em;
         }
         .subtext{
             font-size: 1em;
@@ -60,7 +61,7 @@
 
 @include media-breakpoint-only(xs){
     .motivacional{
-        top: 40vh;
+        top: 30vh;
     }
 }
 
