@@ -1,35 +1,44 @@
-#about-programs{ 
-    .ap-section{
-        height: 70vh;
+#about-programs {
+    .ap-section {
+        height: 35vmax;
         color: white;
         padding: 0 40px;
         text-align: center;
         @include flex-column-centered;
-        div{
+        div {
             margin: 15px auto;
         }
-        .icon-container{
+        .icon-container {
             width: 50px;
             height: 50px;
-            img{
+            img {
                 width: 100%;
                 height: 100%
             }
         }
-        .ap-section-text{
-            h2{
-                font-size: 1em; 
+        .ap-section-text {
+            h2 {
+                font-size: 1em;
                 letter-spacing: .25em;
                 margin-bottom: 25px;
                 font-weight: bold
             }
-            p{
+            p {
                 line-height: 2em;
-                font-size: .9em; 
+                font-size: .9em;
             }
         }
+        @include media-breakpoint-down(md) {
+            height: 50vmax;
+        }
     }
-    #basic{ background-color: map-get($map: $theme-colors, $key: "danger")}
-    #train-hard{ background-color: map-get($map: $theme-colors, $key: "blue")}
-    #aerobics{ background-color: map-get($map: $theme-colors, $key: "dark-blue")}
+    #basic {
+        background-color: map-get($map: $theme-colors, $key: "danger")
+    }
+    #train-hard {
+        background-color: map-get($map: $theme-colors, $key: "blue")
+    }
+    #aerobics {
+        background-color: map-get($map: $theme-colors, $key: "dark-blue")
+    }
 }

@@ -1,177 +1,180 @@
-@include media-breakpoint-between(xs, md){
-    #navbar-header{
+@include media-breakpoint-between(xs, md) {
+    #navbar-header {
         top: 5vh;
     }
 }
 
-#navbar-header{
+#navbar-header {
     position: absolute;
     z-index: 100;
     top: 10vh;
     transition: all 0.25s;
-    #nav{
+    #nav {
         height: 93px;
-        border-bottom: 3px solid map-get($map: $theme-colors, $key: "danger" );
+        border-bottom: 3px solid map-get($map: $theme-colors, $key: "danger");
         background-color: map-get($map: $theme-colors, $key: "dark-blue");
-        .collapse.navbar-collapse{
-            .bold{
-                .nav-item{
+        .collapse.navbar-collapse {
+            .bold {
+                .nav-item {
                     font-weight: bold;
                 }
             }
-            .navbar-nav{
+            .navbar-nav {
                 margin-top: 10px;
-                .nav-item{
-                    .nav-link{
+                .nav-item {
+                    .nav-link {
                         text-transform: uppercase;
                         color: map-get($map: $theme-colors, $key: "white");
                     }
                 }
-                .nav-item:hover, .nav-item.active{
-                    .nav-link{
+                .nav-item:hover,
+                .nav-item.active {
+                    .nav-link {
                         color: map-get($map: $theme-colors, $key: "danger");
                         transition: all .3s !important;
                     }
                 }
             }
-            #navigation-buttons{
+            #navigation-buttons {
                 font-size: .9em;
-                .nav-item{
-                    .nav-link:not(.last){
+                .nav-item {
+                    .nav-link:not(.last) {
                         margin: 15px
                     }
                 }
             }
-            #social-media-icons{
+            #social-media-icons {
                 font-size: 0.85em;
-                .nav-item{
-                    .nav-link:not(.last){
+                .nav-item {
+                    .nav-link:not(.last) {
                         margin-right: 10px;
                     }
                 }
             }
         }
     }
-    @include media-breakpoint-up(lg){
+    @include media-breakpoint-up(lg) {
         right: 5vw;
         width: 90vw;
     }
-    @include media-breakpoint-between(xs,md){
+    @include media-breakpoint-between(xs, md) {
         right: 3.5vw;
         width: 90vw;
-        #hamburger-button{
+        #hamburger-button {
             width: 22px;
-            height:22px;
+            height: 22px;
             border: none;
-            span{
+            span {
                 transition: all .3s !important;
-                color: map-get($map: $theme-colors, $key: "white" )
+                color: map-get($map: $theme-colors, $key: "white")
             }
         }
-        #hamburger-button:hover{
-            span{
+        #hamburger-button:hover {
+            span {
                 color: map-get($map: $theme-colors, $key: "danger")
             }
         }
-        #hamburger-button:active{
-            outline:none !important;
+        #hamburger-button:active {
+            outline: none !important;
         }
     }
     .collapsing {
         -webkit-transition: none;
         transition: none;
         display: none;
-    }   
+    }
 }
-#navbar-header{
-    #nav{
-        .collapse.navbar-collapse.show{
-            @include media-breakpoint-between(xs,md){
+
+#navbar-header {
+    #nav {
+        .collapse.navbar-collapse.show {
+            @include media-breakpoint-between(xs, md) {
                 position: fixed;
                 top: 0;
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background-color: transparentize($color: map-get($map: $theme-colors, $key: "dark-blue" ), $amount: .25%);
-                #close{
+                background-color: transparentize($color: map-get($map: $theme-colors, $key: "dark-blue"), $amount: .25%);
+                #close {
                     position: absolute;
                     right: 5vw;
-                    top:5vh;
+                    top: 5vh;
                     border: none;
                     font-size: .75em;
                     text-transform: uppercase;
                     font-weight: bold;
                     letter-spacing: .25em;
                     transition: all 0.25s;
-                    color: map-get($map: $theme-colors, $key:"white" )
+                    color: map-get($map: $theme-colors, $key: "white")
                 }
-                #close:hover{
-                    color: map-get($map: $theme-colors, $key: "danger" );
+                #close:hover {
+                    color: map-get($map: $theme-colors, $key: "danger");
                 }
-                #close:active{
+                #close:active {
                     outline: none;
                 }
-                
-                #navigation-buttons.navbar-nav{
+                #navigation-buttons.navbar-nav {
                     @include flex-column-centered();
                     margin-top: 20vh;
-                    li.nav-item{
+                    li.nav-item {
                         font-size: 2em;
-                        
                     }
-                    li.nav-item:not(.first){
+                    li.nav-item:not(.first) {
                         margin-top: -30px;
                     }
-                    li.nav-item.active{
-                        .nav-link{
+                    li.nav-item.active {
+                        .nav-link {
                             color: map-get($map: $theme-colors, $key: "white");
                         }
                     }
-                    li.nav-item.active:hover{
-                        .nav-link{
+                    li.nav-item.active:hover {
+                        .nav-link {
                             color: map-get($map: $theme-colors, $key: "danger");
                         }
                     }
                 }
-                #social-media-icons.navbar-nav{
+                #social-media-icons.navbar-nav {
                     @include flex-row-centered();
                     margin: 5vh 10vw;
-                    li.nav-item a.nav-link{
+                    li.nav-item a.nav-link {
                         margin-right: 30px;
                     }
                 }
             }
-            @include media-breakpoint-down(sm){
-                #navigation-buttons.navbar-nav, #social-media-icons.navbar-nav{
-                    li.nav-item{
+            @include media-breakpoint-down(sm) {
+                #navigation-buttons.navbar-nav,
+                #social-media-icons.navbar-nav {
+                    li.nav-item {
                         font-size: 2.5vh;
                     }
                 }
             }
-            @include media-breakpoint-only(xs){
-                #social-media-icons.navbar-nav{
+            @include media-breakpoint-only(xs) {
+                #social-media-icons.navbar-nav {
                     margin: 5vh 25vw;
                 }
             }
         }
     }
 }
-#navbar-header.full-width-fixed{
+
+#navbar-header.full-width-fixed {
     width: 100vw;
     position: fixed;
     right: 0;
     top: 0;
-    #nav{
+    #nav {
         height: 65px;
-        .navbar-brand{
-            img{
+        .navbar-brand {
+            img {
                 max-width: 75%;
             }
         }
     }
 }
-@include media-breakpoint-between(xs, md){
-    #navbar-header{
+
+@include media-breakpoint-between(xs, md) {
+    #navbar-header {
         top: 2.5vh;
     }
 }

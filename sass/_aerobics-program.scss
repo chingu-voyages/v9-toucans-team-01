@@ -1,74 +1,74 @@
-#aerobics-program{
+#aerobics-program {
     background-color: map-get($map: $theme-colors, $key: "dark-blue");
     width: 100%;
-    .text-content{
+    .text-content {
         color: map-get($map: $theme-colors, $key: "grey");
-        .headline{
-            .subtitle, .title{
+        .headline {
+            .subtitle,
+            .title {
                 font-weight: bold;
                 letter-spacing: .2em;
             }
-            .title{
+            .title {
                 margin-top: 10px;
                 color: map-get($map: $theme-colors, $key: "white");
             }
         }
-        .content-list{
-            ul{
+        .content-list {
+            ul {
                 padding: 0;
                 margin-top: 50px;
                 list-style: none
             }
-            li{
+            li {
                 display: flex;
                 align-items: center;
                 font-size: .9em;
                 margin-bottom: 25px;
-                span{
+                span {
                     margin-left: 15px;
                     display: block;
-                    width:90%;
+                    width: 90%;
                 }
             }
         }
-
     }
-    .girl-training{
+    .girl-training {
         background-image: url(../assets/imgs/cta.jpg);
         background-size: cover;
-        background-position-x:50%;
+        background-position-x: 50%;
         width: 100vw;
-        height: 130vh;
+        height: 90vh;
     }
-    .buttons-read-more{
+    .buttons-read-more {
         @import "read-more-button";
-        .read-more-button{
+        .read-more-button {
             width: 175px !important;
             margin-right: 15px;
         }
     }
-    @include media-breakpoint-up(xs){
-        .text-content{
+    @include media-breakpoint-up(xs) {
+        .text-content {
             padding: 50px 15px;
-            .headline .title{
+            .headline .title {
                 font-size: 2em;
             }
-            .content-list{
+            .content-list {
                 margin-bottom: 25px;
             }
         }
     }
-    @include media-breakpoint-up(lg){
+    @include media-breakpoint-up(lg) {
         height: 650px;
-        .girl-training{
+        .girl-training {
             width: 45vw;
             height: 100%;
         }
-        .text-content{
+        .text-content {
             width: 70vw;
             padding: 100px;
-            .headline{
-                .title{
+            .headline {
+                .title {
                     font-size: 3em;
                 }
             }

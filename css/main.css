@@ -1,38 +1,50 @@
 :root {
-	--grey: #909090;
+    --grey: #909090;
     --purple: #190a49;
-	--torch-red: #ff0e3b;
+    --torch-red: #ff0e3b;
 }
 
 .bold {
-	font-weight: 800;
+    font-weight: 800;
 }
 
-.subtitle, .title {
+.subtitle,
+.title {
     font-weight: bold;
     letter-spacing: .2em;
-		text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .subtitle {
-	color: var(--grey);
+    color: var(--grey);
 }
 
 .title {
-	margin-top: 10px;
+    margin-top: 10px;
+    font-size: 3em;
 }
 
-#team .btn, #pricing .btn {
-	background: #190a49;
+.title.title-white {
+    color: white;
 }
 
-#team .btn:hover, #pricing .btn:hover {
-	background: var(--torch-red);
+#team .btn,
+#pricing .btn {
+    outline: none;
+    border: none;
+    background: #b7aae0;
 }
+
+#team .btn:hover,
+#pricing .btn:hover {
+    background: var(--torch-red);
+}
+
 
 /* Classes */
 
 #team {
+    padding: 100px 0;
     background: white !important;
 }
 
@@ -145,72 +157,100 @@ section #team .section-title {
     border-radius: 50%;
 }
 
+
 /* pricing */
-section.pricing, div.pricing {
-  background: #190a49;
-  background: linear-gradient(to right, #190a49, var(--torch-red));
+
+section.pricing,
+div.pricing {
+    /* background: #190a49; */
+    /* background: linear-gradient(to right, #190a49, var(--torch-red)) url(../assets/imgs/index.webp); */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 0%, rgba(255, 0, 0, 0.57) 70%), url(../assets/imgs/pricing.webp);
+    background-size: cover;
+    background-position-x: 75%;
+    background-blend-mode: soft-light;
+    padding: 125px 0;
 }
 
 .pricing .card {
-  border: none;
-  border-radius: 1rem;
-  transition: all 0.2s;
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 1rem;
+    transition: all 0.2s;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
 
 .pricing hr {
-  margin: 1.5rem 0;
+    margin: 1.5rem 0;
 }
 
 .pricing .card-title {
-  margin: 0.5rem 0;
-  font-size: 0.9rem;
-  letter-spacing: .1rem;
-  font-weight: bold;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
 }
 
 .pricing .card-price {
-  font-size: 3rem;
-  margin: 0;
+    font-size: 3rem;
+    margin: 0;
 }
 
 .pricing .card-price .period {
-  font-size: 0.8rem;
+    font-size: 0.8rem;
 }
 
 .pricing ul li {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .pricing .text-muted {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 
 .pricing .btn {
-  font-size: 80%;
-  border-radius: 5rem;
-  letter-spacing: .1rem;
-  font-weight: bold;
-  padding: 1rem;
-  opacity: 1;
-  transition: all 0.2s;
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    opacity: 1;
+    transition: all 0.2s;
 }
+
 
 /* Hover Effects on Card */
 
 @media (min-width: 992px) {
-  .pricing .card:hover {
-    margin-top: -.25rem;
-    margin-bottom: .25rem;
-    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
-  }
-  .pricing .card:hover .btn {
-    opacity: 1;
-  }
+    .pricing .card:hover {
+        margin-top: -.25rem;
+        margin-bottom: .25rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+    .pricing .card:hover .btn {
+        opacity: 1;
+    }
 }
+
 
 /* Footer */
 
 .footer {
-  background: #190a49;
+    background: #190a49;
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+
+.footer .footer-image-container {
+    margin: 25px auto;
+    background-color: #0F0432;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#cool-text {
+    max-width: 100%;
 }

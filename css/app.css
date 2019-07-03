@@ -10200,7 +10200,12 @@ body {
   padding: 0;
   margin: 0;
   background-color: white;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+}
+@media (max-width: 991.98px) {
+  body .headline .title {
+    font-size: 2em;
+  }
 }
 
 .carousel {
@@ -10328,7 +10333,7 @@ body {
   }
 }
 #about-programs .ap-section {
-  height: 70vh;
+  height: 35vmax;
   color: white;
   padding: 0 40px;
   text-align: center;
@@ -10358,6 +10363,11 @@ body {
   line-height: 2em;
   font-size: 0.9em;
 }
+@media (max-width: 991.98px) {
+  #about-programs .ap-section {
+    height: 50vmax;
+  }
+}
 #about-programs #basic {
   background-color: #FF0E3B;
 }
@@ -10379,8 +10389,10 @@ body {
   border-radius: 0px;
 }
 #about-sportify .about-content .right-side-content img {
-  max-width: 100%;
-  max-height: 100%;
+  margin: auto;
+  display: block;
+  max-width: 70%;
+  max-height: 70%;
 }
 #about-sportify .about-content .headline .title {
   font-weight: bold;
@@ -10392,7 +10404,8 @@ body {
   font-size: 0.9em;
   letter-spacing: 0.35em;
 }
-#about-sportify .about-content .headline .subtitle, #about-sportify .about-content .content-text {
+#about-sportify .about-content .headline .subtitle,
+#about-sportify .about-content .content-text {
   color: #9F9F9F;
 }
 #about-sportify .about-content .content-text {
@@ -10426,7 +10439,8 @@ body {
   font-weight: bold;
 }
 @media (min-width: 992px) {
-  #about-sportify .left-side-content, #about-sportify .right-side-content {
+  #about-sportify .left-side-content,
+#about-sportify .right-side-content {
     margin: none;
   }
   #about-sportify .left-side-content {
@@ -10466,6 +10480,77 @@ body {
   }
 }
 
+#classes-section {
+  background-color: #190A49;
+  width: 100%;
+}
+#classes-section .text-content {
+  color: #909090;
+}
+#classes-section .text-content .headline .subtitle, #classes-section .text-content .headline .title {
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+#classes-section .text-content .headline .title {
+  margin-top: 10px;
+  color: #ffffff;
+}
+#classes-section .text-content .content-list ul {
+  padding: 0;
+  margin-top: 50px;
+  list-style: none;
+}
+#classes-section .text-content .content-list li {
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+  margin-bottom: 25px;
+}
+#classes-section .text-content .content-list li span {
+  margin-left: 15px;
+  display: block;
+  width: 90%;
+}
+#classes-section .buttons-read-more .read-more-button {
+  margin-top: 25px;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px 30px !important;
+  width: 200px !important;
+  border-radius: 0px;
+}
+#classes-section .buttons-read-more .read-more-button {
+  width: 175px !important;
+  margin-right: 15px;
+}
+#classes-section .text-content {
+  padding: 50px 15px;
+}
+#classes-section .text-content .headline .title {
+  font-size: 2em;
+}
+#classes-section .text-content .content-list {
+  margin-bottom: 25px;
+}
+@media (min-width: 992px) {
+  #classes-section {
+    height: 650px;
+  }
+  #classes-section .girl-training {
+    width: 45vw;
+    height: 100%;
+  }
+  #classes-section .text-content {
+    width: 70vw;
+    padding: 100px;
+  }
+  #classes-section .text-content .headline .title {
+    font-size: 3em;
+  }
+}
+
 #aerobics-program {
   background-color: #190A49;
   width: 100%;
@@ -10473,7 +10558,8 @@ body {
 #aerobics-program .text-content {
   color: #909090;
 }
-#aerobics-program .text-content .headline .subtitle, #aerobics-program .text-content .headline .title {
+#aerobics-program .text-content .headline .subtitle,
+#aerobics-program .text-content .headline .title {
   font-weight: bold;
   letter-spacing: 0.2em;
 }
@@ -10502,7 +10588,7 @@ body {
   background-size: cover;
   background-position-x: 50%;
   width: 100vw;
-  height: 130vh;
+  height: 90vh;
 }
 #aerobics-program .buttons-read-more .read-more-button {
   margin-top: 25px;
@@ -10570,7 +10656,8 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
-#navbar-header #nav .collapse.navbar-collapse .navbar-nav .nav-item:hover .nav-link, #navbar-header #nav .collapse.navbar-collapse .navbar-nav .nav-item.active .nav-link {
+#navbar-header #nav .collapse.navbar-collapse .navbar-nav .nav-item:hover .nav-link,
+#navbar-header #nav .collapse.navbar-collapse .navbar-nav .nav-item.active .nav-link {
   color: #FF0E3B;
   transition: all 0.3s !important;
 }
@@ -10677,7 +10764,8 @@ body {
   }
 }
 @media (max-width: 767.98px) {
-  #navbar-header #nav .collapse.navbar-collapse.show #navigation-buttons.navbar-nav li.nav-item, #navbar-header #nav .collapse.navbar-collapse.show #social-media-icons.navbar-nav li.nav-item {
+  #navbar-header #nav .collapse.navbar-collapse.show #navigation-buttons.navbar-nav li.nav-item,
+#navbar-header #nav .collapse.navbar-collapse.show #social-media-icons.navbar-nav li.nav-item {
     font-size: 2.5vh;
   }
 }
