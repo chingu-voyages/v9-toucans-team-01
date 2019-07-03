@@ -10365,7 +10365,12 @@ body {
 }
 @media (max-width: 991.98px) {
   #about-programs .ap-section {
-    height: 50vmax;
+    height: 40vmax;
+  }
+}
+@media (max-width: 767.98px) {
+  #about-programs .ap-section {
+    height: 60vmax;
   }
 }
 #about-programs #basic {
