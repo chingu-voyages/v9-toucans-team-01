@@ -18,7 +18,7 @@
   "homepage": "https://github.com/chingu-voyages/v9-toucans-team-01#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "popper.js": "^1.15.0"
   },
   "devDependencies": {
